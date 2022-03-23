@@ -14,7 +14,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     config.vm.provision :shell, :path => "./provision/bootstrap.sh"
 
     # Port forward HTTP (80) to host 2020
-    config.vm.network :forwarded_port, :host => 8080, :guest => 80
+    config.vm.network :forwarded_port, :host => 5892, :guest => 80
 
     config.vm.provider :virtualbox do |vb|
       vb.name = "vfa-minimal"
